@@ -1,0 +1,183 @@
+/* Platform Presence: shared styles for every page.
+   Palette: a green columnar ledger pad, bottle-green ink, an auditor's red pencil. */
+:root {
+  --paper: #EEF2EA;
+  --paper-deep: #E1E9DC;
+  --paper-light: #F7F9F5;
+  --rule: #B5C8AE;
+  --ink: #1B2A21;
+  --ink-soft: #4B5D52;
+  --pencil: #A8261E;
+  --measure: 64ch;
+  --gutter: clamp(16px, 5vw, 56px);
+  --display: "Libre Caslon Display", "Libre Caslon Text", Georgia, "Times New Roman", serif;
+  --text: "Libre Caslon Text", Georgia, "Times New Roman", serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  font-variant-numeric: oldstyle-nums;
+}
+a { color: var(--ink); text-decoration-color: var(--pencil); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { color: var(--pencil); }
+:focus-visible { outline: 2px solid var(--pencil); outline-offset: 3px; border-radius: 2px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 var(--gutter); }
+
+/* Header */
+.site-head { border-bottom: 1px solid var(--rule); }
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 20px; padding-bottom: 16px; flex-wrap: wrap; }
+.wordmark { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-size: 1.5rem; text-decoration: none; letter-spacing: 0.01em; }
+
+/* The Platform Presence logo: stacked layers, with the tick cut into the top platform */
+.logo { width: 34px; height: 34px; flex: none; overflow: visible; }
+.logo .platform { fill: var(--pencil); stroke: var(--pencil); stroke-width: 4; stroke-linejoin: round; }
+.logo .cut { fill: none; stroke: var(--paper); stroke-width: 3.4; stroke-linecap: round; stroke-linejoin: round; }
+.logo .layer { fill: none; stroke: var(--ink); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.logo-big { width: clamp(130px, 19vw, 230px); height: auto; }
+.logo-big .platform, .logo-big .layer { stroke-width: 3; }
+.logo-big .cut { stroke-width: 3.4; stroke-dasharray: 40; stroke-dashoffset: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .logo-big .cut { stroke-dashoffset: 40; animation: draw 0.8s cubic-bezier(.6,.05,.3,1) 0.5s forwards; }
+}
+.wordmark:hover { color: var(--ink); }
+.site-nav { display: flex; gap: 22px; flex-wrap: wrap; font-size: 0.95rem; }
+.site-nav a { text-decoration: none; color: var(--ink-soft); }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--pencil); }
+
+/* Hero: the ledger pad and the mark */
+.hero {
+  background-image: repeating-linear-gradient(to right, transparent 0, transparent 119px, rgba(181, 200, 174, 0.55) 119px, rgba(181, 200, 174, 0.55) 120px);
+  border-bottom: 1px solid var(--rule);
+}
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 40px; align-items: center; padding-top: clamp(56px, 10vw, 120px); padding-bottom: clamp(48px, 8vw, 96px); }
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 6.2vw, 4.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  max-width: 16ch;
+}
+.hero h1 span { display: block; }
+.hero .lede { margin-top: 28px; max-width: 54ch; font-size: 1.15rem; line-height: 1.65; }
+.total-rule { margin-top: 32px; max-width: 54ch; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); height: 5px; }
+.hero .actions { margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap; }
+.byline { margin-top: 20px; color: var(--ink-soft); font-style: italic; font-size: 0.95rem; }
+.byline a { color: var(--ink-soft); }
+
+/* Marks: the Platform Presence tick. Each project draws it inside its own frame. */
+.mark { overflow: visible; }
+.mark path, .mark circle, .mark rect { fill: none; stroke: var(--pencil); stroke-linecap: round; stroke-linejoin: round; }
+.mark-big { width: clamp(120px, 18vw, 210px); height: auto; }
+.mark-big path, .mark-big circle, .mark-big rect { stroke-width: 7; }
+.mark-big .tick { stroke-dasharray: 260; stroke-dashoffset: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .mark-big .tick { stroke-dashoffset: 260; animation: draw 0.9s cubic-bezier(.6,.05,.3,1) 0.5s forwards; }
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+
+.btn {
+  display: inline-block;
+  padding: 11px 20px;
+  font-family: var(--text);
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  color: var(--ink);
+  background: transparent;
+}
+.btn:hover { color: var(--paper); background: var(--ink); }
+.btn-primary { background: var(--ink); color: var(--paper); }
+.btn-primary:hover { background: var(--pencil); border-color: var(--pencil); color: var(--paper); }
+
+/* Sections */
+section { padding: clamp(56px, 8vw, 96px) 0; border-bottom: 1px solid var(--rule); }
+section h2 { font-family: var(--display); font-weight: 400; font-size: clamp(1.9rem, 4vw, 2.75rem); line-height: 1.12; max-width: 22ch; }
+.prose { max-width: var(--measure); margin-top: 22px; }
+.prose p + p { margin-top: 14px; }
+.section-actions { margin-top: 26px; display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* Projects list on the homepage */
+.projects { margin-top: 40px; border-top: 1px solid var(--ink); }
+.project { display: grid; grid-template-columns: 64px minmax(0, 15rem) minmax(0, 1fr); gap: 24px; padding: 34px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+.project .mark { width: 52px; height: 52px; }
+.project .mark path, .project .mark circle, .project .mark rect { stroke-width: 3.2; }
+.project h3 { font-family: var(--display); font-weight: 400; font-size: 1.7rem; line-height: 1.15; }
+.project h3 a { text-decoration: none; }
+.project .kind { margin-top: 6px; font-style: italic; color: var(--ink-soft); font-size: 0.95rem; }
+.project .body p { max-width: 56ch; }
+.project .body .btn { margin-top: 18px; }
+
+/* Legend: three kinds of value, read like an auditor's tickmark key */
+.legend { margin-top: 40px; max-width: 760px; border-top: 1px solid var(--ink); }
+.legend-row { display: grid; grid-template-columns: 48px minmax(0, 13rem) minmax(0, 1fr); gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+.legend-row .mark { width: 34px; height: 34px; margin-top: 2px; }
+.legend-row .mark path, .legend-row .mark circle { stroke-width: 3.4; }
+.legend-row .mark .dot { fill: var(--pencil); stroke: none; }
+.legend-row h3 { font-family: var(--text); font-weight: 700; font-size: 1.05rem; }
+.legend-row .q { font-style: italic; }
+.legend-row p { margin-top: 2px; color: var(--ink-soft); }
+
+/* Principles: a ledger of twelve months */
+.ledger { margin-top: 40px; width: 100%; border-collapse: collapse; }
+.ledger th, .ledger td { text-align: left; vertical-align: top; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--rule); }
+.ledger thead th { font-weight: 400; font-style: italic; color: var(--ink-soft); font-size: 0.92rem; border-bottom: 1px solid var(--ink); }
+.ledger thead .col-num { width: 4.5rem; text-align: right; padding-right: 16px; }
+.ledger thead .col-name { width: 13rem; padding-left: 20px; }
+.ledger .quarter th { padding-top: 30px; font-family: var(--display); font-weight: 400; font-size: 1.3rem; border-bottom: 1px solid var(--ink); }
+.ledger .num { width: 4.5rem; font-family: var(--display); font-size: 1.35rem; color: var(--pencil); line-height: 1.2; border-right: 1px solid var(--rule); padding-right: 16px; text-align: right; }
+.ledger .name { width: 13rem; font-weight: 700; padding-left: 20px; }
+
+/* Toolkit */
+.tools { margin-top: 44px; border-top: 1px solid var(--ink); }
+.tool { display: grid; grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: 32px; padding: 36px 0; border-bottom: 1px solid var(--rule); }
+.tool h3 { font-family: var(--display); font-weight: 400; font-size: 1.65rem; line-height: 1.15; }
+.tool .status { margin-top: 8px; font-style: italic; color: var(--ink-soft); font-size: 0.95rem; }
+.tool .body > p { max-width: 58ch; }
+.questions { margin-top: 18px; list-style: none; counter-reset: q; max-width: 58ch; }
+.questions li { counter-increment: q; display: grid; grid-template-columns: 2rem 1fr; padding: 10px 0; border-top: 1px dashed var(--rule); }
+.questions li::before { content: counter(q) "."; font-family: var(--display); color: var(--pencil); font-size: 1.15rem; }
+.rewrite { margin-top: 18px; max-width: 58ch; display: grid; gap: 10px; }
+.rewrite div { padding: 14px 18px; background: var(--paper-deep); border-left: 3px solid var(--rule); }
+.rewrite .after { border-left-color: var(--pencil); background: var(--paper-light); }
+.rewrite b { display: block; font-size: 0.9rem; font-weight: 400; font-style: italic; color: var(--ink-soft); }
+.rewrite .before span { text-decoration: line-through; text-decoration-color: var(--pencil); text-decoration-thickness: 1.5px; }
+.fine { margin-top: 12px; font-size: 0.9rem; color: var(--ink-soft); font-style: italic; }
+.tool .btn { margin-top: 20px; }
+
+/* Contact and footer */
+.contact-links { margin-top: 28px; display: flex; gap: 26px; flex-wrap: wrap; }
+.site-foot { padding: 28px 0 40px; color: var(--ink-soft); font-size: 0.9rem; }
+.site-foot p + p { margin-top: 6px; }
+.site-foot a { color: var(--ink-soft); }
+
+/* Small screens */
+@media (max-width: 760px) {
+  .hero .wrap { grid-template-columns: 1fr; gap: 8px; }
+  .hero .mark-wrap { order: -1; }
+  .mark-big { width: 92px; }
+  .logo-big { width: 96px; }
+  .project { grid-template-columns: 52px minmax(0, 1fr); gap: 14px 16px; }
+  .project .mark { width: 40px; height: 40px; }
+  .project .body { grid-column: 2; }
+  .legend-row { grid-template-columns: 40px minmax(0, 1fr); }
+  .legend-row p { grid-column: 2; }
+  .tool { grid-template-columns: 1fr; gap: 14px; }
+  .ledger thead { position: absolute; left: -9999px; }
+  .ledger, .ledger tbody, .ledger tr, .ledger td, .ledger th { display: block; width: 100%; }
+  .ledger tr { display: grid; grid-template-columns: 3rem 1fr; border-bottom: 1px solid var(--rule); }
+  .ledger .quarter { display: block; }
+  .ledger td, .ledger th { border-bottom: 0; }
+  .ledger .num { grid-row: span 2; border-right: 0; text-align: left; padding-right: 0; width: auto; }
+  .ledger .name { width: auto; padding: 12px 0 0; }
+  .ledger .line { padding: 2px 0 12px; }
+}
