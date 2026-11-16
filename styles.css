@@ -106,6 +106,17 @@ section h2 { font-family: var(--display); font-weight: 400; font-size: clamp(1.9
 .prose p + p { margin-top: 14px; }
 .section-actions { margin-top: 26px; display: flex; gap: 14px; flex-wrap: wrap; }
 
+/* Section kicker: the project a section belongs to, with that project's mark */
+.kicker { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; margin-bottom: 18px; color: var(--ink-soft); font-style: italic; font-size: 0.95rem; }
+.kicker .mark { width: 26px; height: 26px; flex: none; }
+.kicker .mark path, .kicker .mark circle, .kicker .mark rect { stroke-width: 3.6; }
+.kicker-name { font-style: normal; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); padding-right: 12px; border-right: 1px solid var(--rule); }
+section h2, section h3.sub { text-wrap: balance; }
+section h2.pair { max-width: none; }
+section h2.pair span { display: block; }
+section h3.sub { margin-top: 48px; font-family: var(--display); font-weight: 400; font-size: clamp(1.4rem, 2.6vw, 1.75rem); line-height: 1.2; max-width: 26ch; }
+section[id], article[id] { scroll-margin-top: 16px; }
+
 /* Projects list on the homepage */
 .projects { margin-top: 40px; border-top: 1px solid var(--ink); }
 .project { display: grid; grid-template-columns: 64px minmax(0, 15rem) minmax(0, 1fr); gap: 24px; padding: 34px 0; border-bottom: 1px solid var(--rule); align-items: start; }
@@ -154,6 +165,59 @@ section h2 { font-family: var(--display); font-weight: 400; font-size: clamp(1.9
 .fine { margin-top: 12px; font-size: 0.9rem; color: var(--ink-soft); font-style: italic; }
 .tool .btn { margin-top: 20px; }
 
+/* Toolkit tools: notes, worksheets, results and reference tables */
+.note { margin-top: 30px; max-width: var(--measure); padding: 16px 20px; background: var(--paper-light); border-left: 3px solid var(--pencil); font-size: 0.98rem; }
+.note p + p { margin-top: 8px; }
+.tool h3 a { text-decoration: none; }
+.field { margin-top: 22px; max-width: 58ch; }
+.field label, .verdict .label, .checks .label { display: block; font-weight: 700; }
+.field .hint { display: block; margin-top: 2px; color: var(--ink-soft); font-style: italic; font-size: 0.93rem; }
+.field input[type="text"], .field textarea { display: block; width: 100%; margin-top: 8px; padding: 10px 12px; font: inherit; color: var(--ink); background: var(--paper-light); border: 1px solid var(--ink-soft); border-radius: 3px; }
+.field textarea { min-height: 5.4em; resize: vertical; line-height: 1.55; }
+.worksheet { margin-top: 36px; max-width: 760px; border-top: 1px solid var(--ink); }
+.worksheet > .field { padding-bottom: 28px; }
+.builder { margin-top: 8px; max-width: 760px; }
+.part { border: 0; border-top: 1px solid var(--rule); padding: 28px 0 30px; min-width: 0; }
+.part-head { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 18px; align-items: start; }
+.part-head .mark { width: 34px; height: 34px; margin-top: 4px; }
+.part-head .mark path { stroke-width: 3.4; }
+.part-head .mark .dot { fill: var(--pencil); stroke: none; }
+.kind-name { font-weight: 700; }
+.big-q { font-family: var(--display); font-size: clamp(1.3rem, 2.6vw, 1.55rem); line-height: 1.25; margin-top: 2px; }
+.prompts { margin: 16px 0 0 66px; max-width: 58ch; list-style: none; }
+.prompts li { padding: 9px 0; border-top: 1px dashed var(--rule); color: var(--ink-soft); }
+.part .field, .part .verdict { margin-left: 66px; }
+.verdict { margin-top: 22px; }
+.choices { margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
+.choice input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.choice span { display: inline-block; padding: 8px 18px; border: 1px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.choice span:hover { background: var(--paper-deep); }
+.choice input:checked + span { background: var(--ink); color: var(--paper); }
+.choice input:focus-visible + span { outline: 2px solid var(--pencil); outline-offset: 3px; }
+.result { margin-top: 30px; max-width: 760px; padding: 22px 24px; background: var(--paper-light); border: 1px solid var(--ink); border-left: 4px solid var(--pencil); }
+.result p + p { margin-top: 8px; }
+.result .score { font-family: var(--display); font-size: 1.6rem; line-height: 1.2; }
+.result .result-about { font-style: italic; color: var(--ink-soft); }
+.result.is-empty { border-color: var(--rule); border-left-color: var(--rule); color: var(--ink-soft); font-style: italic; }
+.tool-actions { margin-top: 22px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+button.btn { cursor: pointer; }
+.status-msg { color: var(--ink-soft); font-style: italic; font-size: 0.93rem; }
+.checks { margin-top: 24px; max-width: 58ch; }
+.checks label { display: grid; grid-template-columns: 1.7rem 1fr; align-items: start; padding: 9px 0; border-top: 1px dashed var(--rule); cursor: pointer; }
+.checks .label { padding-bottom: 8px; }
+.checks input { width: 1.05rem; height: 1.05rem; margin-top: 0.4em; accent-color: var(--pencil); }
+.pattern { margin-top: 20px; max-width: 58ch; padding: 14px 18px; background: var(--paper-light); border-left: 3px solid var(--pencil); }
+.plain-list { margin-top: 16px; max-width: 58ch; list-style: none; }
+.plain-list li { position: relative; padding: 10px 0 10px 1.8rem; border-top: 1px dashed var(--rule); }
+.plain-list li::before { content: "\2713"; position: absolute; left: 0; color: var(--pencil); }
+.sheet { margin-top: 26px; width: 100%; max-width: 920px; border-collapse: collapse; border-top: 1px solid var(--ink); }
+.sheet th, .sheet td { text-align: left; vertical-align: top; padding: 12px 20px 12px 0; border-bottom: 1px solid var(--rule); }
+.sheet thead th { font-weight: 400; font-style: italic; color: var(--ink-soft); font-size: 0.92rem; border-bottom: 1px solid var(--ink); }
+.sheet tbody th { font-weight: 700; white-space: nowrap; }
+.sheet .soft { color: var(--ink-soft); font-style: italic; white-space: nowrap; }
+.sheet .struck { color: var(--ink-soft); text-decoration: line-through; text-decoration-color: var(--pencil); text-decoration-thickness: 1.5px; }
+[hidden] { display: none !important; }
+
 /* Contact and footer */
 .contact-links { margin-top: 28px; display: flex; gap: 26px; flex-wrap: wrap; }
 .site-foot { padding: 28px 0 40px; color: var(--ink-soft); font-size: 0.9rem; }
@@ -172,6 +236,12 @@ section h2 { font-family: var(--display); font-weight: 400; font-size: clamp(1.9
   .legend-row { grid-template-columns: 40px minmax(0, 1fr); }
   .legend-row p { grid-column: 2; }
   .tool { grid-template-columns: 1fr; gap: 14px; }
+  .prompts, .part .field, .part .verdict { margin-left: 0; }
+  .sheet thead { position: absolute; left: -9999px; }
+  .sheet, .sheet tbody, .sheet tr, .sheet td, .sheet tbody th { display: block; width: 100%; }
+  .sheet tr { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .sheet td, .sheet tbody th { border-bottom: 0; padding: 2px 0; white-space: normal; }
+  .sheet td[data-label]::before { content: attr(data-label) ":"; margin-right: 0.4em; font-style: italic; color: var(--ink-soft); font-size: 0.9rem; text-decoration: none; display: inline-block; }
   .ledger thead { position: absolute; left: -9999px; }
   .ledger, .ledger tbody, .ledger tr, .ledger td, .ledger th { display: block; width: 100%; }
   .ledger tr { display: grid; grid-template-columns: 3rem 1fr; border-bottom: 1px solid var(--rule); }
@@ -180,4 +250,14 @@ section h2 { font-family: var(--display); font-weight: 400; font-size: clamp(1.9
   .ledger .num { grid-row: span 2; border-right: 0; text-align: left; padding-right: 0; width: auto; }
   .ledger .name { width: auto; padding: 12px 0 0; }
   .ledger .line { padding: 2px 0 12px; }
+}
+
+/* Printing a worksheet: only the worksheet, on white */
+@media print {
+  body.print-value-audit { background: #fff; }
+  body.print-value-audit .site-head, body.print-value-audit .site-foot, body.print-value-audit .hero,
+  body.print-value-audit main > section:not(#value-audit), body.print-value-audit .no-print, body.print-value-audit .kicker { display: none !important; }
+  body.print-value-audit section { border: 0; padding: 0; }
+  body.print-value-audit .choice span { border-color: #999; color: #999; }
+  body.print-value-audit .choice input:checked + span { background: #fff; color: #000; border: 2px solid #000; font-weight: 700; }
 }
