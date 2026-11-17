@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The presence audit | Platform Presence</title>
+<meta name="description" content="Twenty checks, about twenty minutes, and an audit opinion on whether your online presence fairly shows your value. Free, self-serve and private.">
+<meta property="og:title" content="The presence audit | Platform Presence">
+<meta property="og:description" content="Twenty checks, about twenty minutes, and one honest opinion: does your online presence fairly show your value?">
+<meta property="og:url" content="https://platformpresence.com/presence-audit.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23EEF2EA'/%3E%3Cpath%20d='M32%209%20L58%2022%20L32%2035%20L6%2022%20Z'%20fill='%23A8261E'%20stroke='%23A8261E'%20stroke-width='5'%20stroke-linejoin='round'/%3E%3Cpath%20d='M21.5%2022%20C24.5%2023.8%2026.5%2025.8%2028.5%2029%20C32%2023.5%2036%2019.5%2041.5%2016.2'%20fill='none'%20stroke='%23EEF2EA'%20stroke-width='4'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3Cpath%20d='M6%2032%20L32%2045%20L58%2032'%20fill='none'%20stroke='%231B2A21'%20stroke-width='5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3Cpath%20d='M6%2042%20L32%2055%20L58%2042'%20fill='none'%20stroke='%231B2A21'%20stroke-width='5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="index.html"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><path class="platform" d="M32 9 L58 22 L32 35 L6 22 Z"/><path class="cut" d="M21.5 22 C24.5 23.8 26.5 25.8 28.5 29 C32 23.5 36 19.5 41.5 16.2"/><path class="layer" d="M6 32 L32 45 L58 32"/><path class="layer" d="M6 42 L32 55 L58 42"/></svg><span>Platform Presence</span></a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#versed-in-value">Versed in Value</a>
+      <a href="toolkit.html" aria-current="page">Toolkit</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>The presence audit</h1>
+        <p class="lede">Twenty checks, about twenty minutes, and one honest opinion: does your online presence fairly show your value?</p>
+        <div class="total-rule" aria-hidden="true"></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="#reader">Start the audit</a>
+          <a class="btn" href="#how">How the audit works</a>
+        </div>
+        <p class="byline">Free and self-serve. Part of the <a href="toolkit.html">Platform Presence toolkit</a>, by Liz Nambuya. Checks last reviewed November 2026.</p>
+      </div>
+      <div class="mark-wrap" aria-hidden="true">
+        <svg class="mark mark-big" viewBox="0 0 130 130"><rect x="7" y="7" width="116" height="116" rx="6"/><path class="tick" d="M30 68 C40 74 48 84 55 98 C68 70 82 50 102 32"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <noscript><div class="wrap"><p class="note">The audit needs JavaScript to total your answers and give an opinion. You can still read every check and fix on this page.</p></div></noscript>
+
+  <form id="audit-form" autocomplete="off">
+
+  <section id="reader">
+    <div class="wrap">
+      <p class="note" id="restored" hidden>Welcome back. Your answers from <span class="when"></span> are filled in. Carry on, or clear them at the end to start again.</p>
+
+      <h2>1. Who's reading?</h2>
+      <div class="prose">
+        <p>An audit is always for someone. Pick the one reader you want your presence to work for, and the decision they're making. The same profile can work for a recruiter and fall short for a client.</p>
+      </div>
+
+      <div class="field">
+        <label for="reader-input">My reader is&hellip;</label>
+        <span class="hint">e.g. "a hiring manager deciding whether to interview me for an analyst role"</span>
+        <input type="text" id="reader-input" name="reader">
+      </div>
+
+      <fieldset class="field places">
+        <legend class="label">Where they'll look</legend>
+        <div class="places-grid">
+            <label><input type="checkbox" name="place" value="LinkedIn"> <span>LinkedIn</span></label>
+            <label><input type="checkbox" name="place" value="CV"> <span>CV</span></label>
+            <label><input type="checkbox" name="place" value="Personal website"> <span>Personal website</span></label>
+            <label><input type="checkbox" name="place" value="Portfolio"> <span>Portfolio</span></label>
+            <label><input type="checkbox" name="place" value="Newsletter or blog"> <span>Newsletter or blog</span></label>
+            <label><input type="checkbox" name="place" value="A social account I use for work"> <span>A social account I use for work</span></label>
+            <label><input type="checkbox" name="place" value="Email signature"> <span>Email signature</span></label>
+            <label><input type="checkbox" name="place" value="Event or speaker bios"> <span>Event or speaker bios</span></label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="main-select">My main profile</label>
+        <span class="hint">The one your reader will land on first.</span>
+        <select id="main-select" name="main"><option value="">Tick the places above first</option></select>
+      </div>
+
+      <h3 class="sub">Before you start</h3>
+      <ul class="plain-list">
+        <li>Open a private browser window (called Incognito in Chrome and Private in Safari; it's in your browser's menu). It ignores your logins and search history, so you see what a stranger sees.</li>
+        <li>Open your main profiles in other tabs.</li>
+        <li>If you can, have a friend on hand for ten seconds for check 17. There's a do-it-alone version too.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="checks">
+    <div class="wrap">
+      <h2>2. The 20 checks</h2>
+      <div class="prose">
+        <p>Answer each question for your profiles as they are today, not as you mean them to be. Open a check to see how to test it and how to fix it. If a check genuinely doesn't apply to you, choose Not for me and it won't count.</p>
+        <p>Each "no" points to one of three risks: <b>underselling</b> (you're hiding how good you are), <b>overclaiming</b> (you're saying more than you could prove) or <b>oversharing</b> (something's public that should be private). Most branding advice only pushes one way, towards more. This audit checks all three.</p>
+      </div>
+
+      <div class="check-group" id="group-exists">
+        <p class="kicker"><span class="kicker-name">Exists</span><span>Checks 1 to 4</span></p>
+        <h3 class="sub">Can people find you?</h3>
+      <fieldset class="check" id="c1" data-n="1" data-risk="under" data-rating="high" data-short="Make your LinkedIn complete and public, and link to it wherever your name appears.">
+        <legend><span class="num">1</span><span class="q">If you Google your name and job, do you appear on the first page?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; high priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c1" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c1" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c1" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Open a private browser window and search your name plus your job, e.g. "Jane Smith accountant".</p>
+            <p><b>Fix.</b> Fill in your LinkedIn fully and make it public. Then add your LinkedIn link to other places that show your name, such as your website, email signature or newsletter page. If you share a common name, use the same middle initial, city or field everywhere so people can tell you apart.</p>
+            <p class="why"><b>Why it matters.</b> If people can't find you, nothing else on your profile gets a chance to work.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c2" data-n="2" data-risk="under" data-rating="low" data-short="Make your profile public and give it a clean link.">
+        <legend><span class="num">2</span><span class="q">Can someone see your LinkedIn (or main profile) without logging in?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; low priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c2" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c2" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c2" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Log out, or use a private window, and open your profile.</p>
+            <p><b>Fix.</b> Make your profile public. Then tidy its link: on your LinkedIn profile, click "Edit public profile &amp; URL" and swap the jumble of letters and numbers at the end of the link for your name, e.g. linkedin.com/in/janesmith.</p>
+            <p class="why"><b>Why it matters.</b> A clean, public link is easier to share and looks cared for.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c3" data-n="3" data-risk="share" data-rating="high" data-short="Delete or hide old accounts and posts, and update anything out of date.">
+        <legend><span class="num">3</span><span class="q">When you Google your name, is everything on the first page something you'd be happy for a recruiter or client to see?</span></legend>
+        <p class="risk-line">A "no" means <b>oversharing</b> &middot; high priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c3" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c3" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c3" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Search your name in a private window and read the first page, including Images. Look for old social media posts, accounts you've abandoned, out-of-date profiles, or someone else with your name who could be mistaken for you.</p>
+            <p><b>Fix.</b> Delete, or make private, old accounts and posts you don't want seen, and update anything out of date. If someone else shares your name, add your middle initial, city or job to your profiles so people can tell you apart.</p>
+            <p class="why"><b>Why it matters.</b> Whatever comes up first is your first impression, whether you chose it or not.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c4" data-n="4" data-risk="under" data-rating="high" data-short="Fix or remove broken links and old contact details.">
+        <legend><span class="num">4</span><span class="q">If someone tries to contact you or look at your work, do all the links and contact details on your profiles and CV actually work?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; high priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c4" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c4" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c4" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Click every link on your LinkedIn, CV and website: your portfolio, articles, other profiles. Send a test email to the address on your CV and check the phone number is current. Look out for links to sites that have closed or expired.</p>
+            <p><b>Fix.</b> Fix or remove any link that doesn't work, and replace old email addresses or phone numbers with ones you check.</p>
+            <p class="why"><b>Why it matters.</b> A broken link makes a reader wonder what else is out of date.</p>
+          </div>
+        </details>
+      </fieldset>
+      </div>
+      <div class="check-group" id="group-complete">
+        <p class="kicker"><span class="kicker-name">Complete</span><span>Checks 5 to 8</span></p>
+        <h3 class="sub">Is your best work there?</h3>
+      <fieldset class="check" id="c5" data-n="5" data-risk="under" data-rating="medium" data-short="Add your three proudest achievements, each saying what changed.">
+        <legend><span class="num">5</span><span class="q">Are your three proudest achievements written somewhere a recruiter or client would see them?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; medium priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c5" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c5" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c5" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Without looking, write down the three things you're proudest of at work: a project, a result, an award. Then open your LinkedIn and CV and look for each one. Mentioned only in passing, or missing altogether, counts as a no.</p>
+            <p><b>Fix.</b> Add each one to your LinkedIn About section or the job it belongs to, in a sentence that says what you did and what changed. <a href="toolkit.html#say-it-louder">Say it louder</a> helps you write it.</p>
+            <p class="why"><b>Why it matters.</b> If you don't say it, a reader can't know it, and your best work goes uncounted.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c6" data-n="6" data-risk="under" data-rating="medium" data-short="Add missing qualifications, with the year and the full name.">
+        <legend><span class="num">6</span><span class="q">Are all your qualifications and professional memberships listed, with the letters after your name where you have them?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; medium priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c6" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c6" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c6" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Gather your certificates: degrees, professional qualifications, licences, and courses that took real effort. Compare them with the Education and Licences sections on your LinkedIn and the qualifications on your CV.</p>
+            <p><b>Fix.</b> Add anything missing, with the year and the full name as well as the letters, e.g. Chartered Accountant (ACA).</p>
+            <p class="why"><b>Why it matters.</b> A qualification is proof that someone else has checked your knowledge, so leaving one off throws away free evidence.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c7" data-n="7" data-risk="under" data-rating="low" data-short="Add a Projects or Volunteering section.">
+        <legend><span class="num">7</span><span class="q">Do you show what you do outside your job title, such as side projects, volunteering, writing, mentoring or teaching?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; low priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c7" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c7" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c7" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> List what you do beyond your day job: a blog or newsletter, a charity role, a club you run, a course you teach, something you built. Then check which of these appear anywhere on your profile or CV.</p>
+            <p><b>Fix.</b> Add a Projects or Volunteering section on LinkedIn, or a line on your CV, with one sentence on what each involved.</p>
+            <p class="why"><b>Why it matters.</b> This work often shows skills your job title hides, like leading, writing or starting something from nothing.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c8" data-n="8" data-risk="under" data-rating="medium" data-short="Add one thing a reader can open to check a claim.">
+        <legend><span class="num">8</span><span class="q">Is there anything a reader can open to see proof of your work, such as an article, a sample, a portfolio or a recommendation?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; medium priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c8" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c8" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c8" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Imagine a stranger doubts one of your claims. Could they click something on your profile to check it, without asking you? Look for links, items in LinkedIn's Featured section, or written recommendations.</p>
+            <p><b>Fix.</b> Add one thing they can open: a piece of work you're allowed to share, an article, a talk, or a recommendation from someone you've worked with.</p>
+            <p class="why"><b>Why it matters.</b> Claims are easy to make; proof is what turns a reader's maybe into a yes.</p>
+          </div>
+        </details>
+      </fieldset>
+      </div>
+      <div class="check-group" id="group-accurate">
+        <p class="kicker"><span class="kicker-name">Accurate</span><span>Checks 9 to 12</span></p>
+        <h3 class="sub">Is it right and up to date?</h3>
+      <fieldset class="check" id="c9" data-n="9" data-risk="under over" data-rating="medium" data-short="Pick the true, current version and copy it everywhere word for word.">
+        <legend><span class="num">9</span><span class="q">Do your job title and one-line description say the same thing on your LinkedIn, CV, website and any bios?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling or overclaiming</b> &middot; medium priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c9" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c9" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c9" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Open them side by side and compare the job title, employer and the one line that sums you up. Look for an old title after a promotion, different descriptions of what you do, or an old employer still listed somewhere.</p>
+            <p><b>Fix.</b> Choose the version that's true and current, and copy it everywhere word for word. Keep that version in one note, so next time you copy from it instead of retyping.</p>
+            <p class="why"><b>Why it matters.</b> When two places disagree, a reader doesn't know which to believe, and often believes neither.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c10" data-n="10" data-risk="under" data-rating="medium" data-short="Update anything stale, and set a yearly reminder.">
+        <legend><span class="num">10</span><span class="q">Is everything up to date: your current job, location, photo and contact details?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; medium priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c10" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c10" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c10" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Go through your profiles and CV and check each item against today. Is the job current? Do you still live where it says? Was your photo taken in the last few years, and does it still look like you?</p>
+            <p><b>Fix.</b> Update anything stale. The reminder button at the end of this audit puts a yearly check in your calendar; add one whenever something changes, too.</p>
+            <p class="why"><b>Why it matters.</b> An out-of-date profile suggests you're not paying attention, even when you are.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c11" data-n="11" data-risk="over" data-rating="high" data-short="Describe your real part in anything you&#x27;ve overstated.">
+        <legend><span class="num">11</span><span class="q">Is everything you claim true, and could you explain each claim in an interview?</span></legend>
+        <p class="risk-line">A "no" means <b>overclaiming</b> &middot; high priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c11" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c11" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c11" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Read each claim on your profile and CV and ask: could I talk about this for five minutes, with examples? Would my manager or a colleague agree with how I've described my part? Watch for words like "led" or "owned" where you supported.</p>
+            <p><b>Fix.</b> Describe your real part: "helped", "co-led", "part of a team that&hellip;".</p>
+            <p class="why"><b>Why it matters.</b> Honest claims survive a follow-up question; inflated ones fall apart in the first interview and cost you trust.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c12" data-n="12" data-risk="over" data-rating="high" data-short="Correct dates, titles and qualifications to match your records.">
+        <legend><span class="num">12</span><span class="q">Are your dates, job titles and qualification names exactly right?</span></legend>
+        <p class="risk-line">A "no" means <b>overclaiming</b> &middot; high priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c12" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c12" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c12" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Compare each job's dates and title with your contract or payslips, and each qualification with its certificate. Look for rounded-up dates, titles you only used informally, or a qualification still in progress listed as complete.</p>
+            <p><b>Fix.</b> Correct anything that doesn't match. Promoted but kept the same title? Describe the bigger role in the job description; don't invent a title.</p>
+            <p class="why"><b>Why it matters.</b> Employers check these in references, and a mismatch can cost you an offer.</p>
+          </div>
+        </details>
+      </fieldset>
+      </div>
+      <div class="check-group" id="group-valued">
+        <p class="kicker"><span class="kicker-name">Valued</span><span>Checks 13 to 16</span></p>
+        <h3 class="sub">Do you say what difference you made?</h3>
+      <fieldset class="check" id="c13" data-n="13" data-risk="under" data-rating="medium" data-short="Rewrite your top lines to say what changed because of you.">
+        <legend><span class="num">13</span><span class="q">Do most of your job descriptions say what changed because of you, not just what your duties were?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; medium priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c13" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c13" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c13" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Read each line under your jobs and count the ones that include a result: a number, an improvement, something that got faster or better, or who it helped. Lines starting "Responsible for" are usually duties, not results.</p>
+            <p><b>Fix.</b> Rewrite your top lines to say what you did and what changed because of it. <a href="toolkit.html#say-it-louder">Say it louder</a> walks you through it, including what to do when you don't have numbers.</p>
+            <p class="why"><b>Why it matters.</b> Readers choose people for what they achieved, not for what they were asked to do.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c14" data-n="14" data-risk="under" data-rating="medium" data-short="Use your reader&#x27;s words: one or two in your headline, the rest further down.">
+        <legend><span class="num">14</span><span class="q">Do you describe your work in the words your reader uses, such as the skills and specialisms in the job ads you'd apply for?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; medium priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c14" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c14" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c14" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Open three job ads for roles you'd want, or the profiles of people already doing them, and note the words that keep coming up: skills, tools, specialisms. Then check whether those words appear in your headline (the line under your name), About section and job descriptions.</p>
+            <p><b>Fix.</b> Put one or two of those words in your headline, e.g. "Payroll specialist | multi-country payroll and pensions" rather than just "Payroll specialist". Work the rest into your About section and job descriptions, only where they genuinely apply. See <a href="#one-headline">one headline, three checks</a>.</p>
+            <p class="why"><b>Why it matters.</b> Recruiters find people on LinkedIn by searching for these words, and many application systems compare CVs with the job ad, so someone described in different words can be missed.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c15" data-n="15" data-risk="under" data-rating="medium" data-short="Ask two people for a short recommendation each.">
+        <legend><span class="num">15</span><span class="q">Has anyone else said something good about you in public, such as a recommendation, testimonial, award or quote?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; medium priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c15" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c15" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c15" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Look on your LinkedIn for written recommendations (skill endorsements don't count), and on your website or CV for testimonials, awards or quotes. You need at least one sentence about you written by someone else.</p>
+            <p><b>Fix.</b> Ask two people you've worked with closely for two or three lines each about a specific piece of work, and offer to write one for them.</p>
+            <p class="why"><b>Why it matters.</b> Praise from someone else carries more weight than anything you say about yourself.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c16" data-n="16" data-risk="under" data-rating="low" data-short="Name the one thing that sets you apart, near the top.">
+        <legend><span class="num">16</span><span class="q">Do you say what makes you different from other people with the same job title?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; low priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c16" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c16" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c16" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Ask yourself: what can I do, or what mix do I have, that most people with my title don't? A language, a second field, an unusual background, a specialist skill. Then check whether it appears near the top of your profile.</p>
+            <p><b>Fix.</b> Pick one, not three, and put it in your headline or the first line of your About section, e.g. "Accountant who also codes in Python" or "HR adviser who spent ten years as a nurse". See <a href="#one-headline">one headline, three checks</a>.</p>
+            <p class="why"><b>Why it matters.</b> If you look the same as everyone else with your title, a reader has no reason to pick you.</p>
+          </div>
+        </details>
+      </fieldset>
+      <aside class="panel" id="one-headline" aria-labelledby="one-headline-title">
+        <p class="panel-title" id="one-headline-title">One headline, three checks</p>
+        <p>Checks 14, 16 and 17 all touch the line under your name. Work on them together, with one formula, so the headline doesn't turn into a list:</p>
+        <p class="pattern"><b>your job + your specialism, in your reader's words + the one thing few people with your title can say</b></p>
+        <ul class="plain-list">
+          <li><b>Check 14</b> gives you the specialism: one or two words from the job ads, not all of them. The rest belong in your About section and job descriptions.</li>
+          <li><b>Check 16</b> gives you the one thing. Pick one, not three.</li>
+          <li><b>Check 17</b> tests the result. If a stranger can't say back what you do and for whom, cut it back.</li>
+        </ul>
+        <p><i>An invented example: Project coordinator who keeps cross-border shipping on time, fluent in French and customs rules.</i></p>
+      </aside>
+      </div>
+      <div class="check-group" id="group-clear">
+        <p class="kicker"><span class="kicker-name">Clear</span><span>Checks 17 to 20</span></p>
+        <h3 class="sub">Is it clear and safe?</h3>
+      <fieldset class="check" id="c17" data-n="17" data-risk="under" data-rating="medium" data-short="Make your first line say what you do and for whom.">
+        <legend><span class="num">17</span><span class="q">Could a stranger tell what you do, and who you do it for, after 10 seconds on your profile?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; medium priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c17" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c17" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c17" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Show a friend outside your field your profile for 10 seconds, then hide it and ask: what does this person do, and for whom? On your own: read just your headline and first line out loud and ask yourself the same.</p>
+            <p><b>Fix.</b> Put the answer in your first line, in plain words a stranger would understand. If you added words to your headline for checks 14 and 16, this is where you test them: if it now reads like a list, cut it back to <a href="#one-headline">the formula</a>.</p>
+            <p class="why"><b>Why it matters.</b> Recruiters skim a CV for about seven seconds (<a href="https://www.hrdive.com/news/eye-tracking-study-shows-recruiters-look-at-resumes-for-7-seconds/">Ladders, 2018</a>), so anything that isn't clear at a glance may never be read.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c18" data-n="18" data-risk="under" data-rating="low" data-short="Put one clear next step near the top.">
+        <legend><span class="num">18</span><span class="q">Is it obvious how to contact you, or what to do next, without scrolling?</span></legend>
+        <p class="risk-line">A "no" means <b>underselling</b> &middot; low priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c18" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c18" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c18" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Look at the top of your profile or website as a stranger would. Is there a clear way to get in touch, or a link to your work or CV? On LinkedIn, check your contact info and Featured section.</p>
+            <p><b>Fix.</b> Add one clear next step near the top: an email address, a contact link, or a link to your best work. A separate email address for job hunting keeps your personal one private (see check 19).</p>
+            <p class="why"><b>Why it matters.</b> If an interested reader can't see what to do next, most won't go looking.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c19" data-n="19" data-risk="share" data-rating="high" data-short="Take your home address, date of birth and personal number offline.">
+        <legend><span class="num">19</span><span class="q">Are your private details kept off the internet: home address, personal phone number, date of birth?</span></legend>
+        <p class="risk-line">A "no" means <b>oversharing</b> &middot; high priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c19" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c19" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c19" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Search your name with your town, your phone number and your email in a private window, and read the first two pages. Check any CV you've ever posted online, including job-board profiles you set to public and forgot, since CVs often carry a full address. Then set up <a href="https://support.google.com/websearch/answer/12719076?hl=en">Google's Results about you</a>, which looks for your contact details in search results and can alert you to new ones.</p>
+            <p><b>Fix.</b></p>
+            <ul class="det-list">
+              <li>Take your full address and date of birth off every profile and online CV. A town or city is enough, and the <a href="https://nationalcareers.service.gov.uk/careers-advice/cv-sections">National Careers Service</a> advises leaving your date of birth off a CV altogether.</li>
+              <li>Use a separate email address, and if you can a separate phone number, for job hunting and public profiles.</li>
+              <li>Delete or hide old CVs on job boards you no longer use.</li>
+              <li>Ask Google to remove results that show your contact details, through Results about you. Removing a search result doesn't delete the page itself, so ask the site to take it down too.</li>
+            </ul>
+            <p><b>What can go wrong.</b></p>
+            <ul class="det-list">
+              <li><b>Identity fraud.</b> Your name, date of birth and address are the details banks and phone companies use to check it's you. Together, they help a fraudster open accounts in your name or talk their way into yours.</li>
+              <li><b>Account takeover.</b> Your mobile number is often where your email and bank send their security codes. Someone who has it, along with your other details, can try to have it moved to their own SIM card.</li>
+              <li><b>Fake recruiters.</b> Scammers use public details to make an approach look genuine, then ask for ID documents, bank details or a fee. A real employer doesn't need your date of birth to invite you to interview.</li>
+              <li><b>Your safety.</b> A home address tells strangers where you live, and when you're likely to be out.</li>
+              <li><b>It spreads.</b> Sites that collect personal data copy what's public and republish it, so the longer your details stay up, the harder they are to remove.</li>
+            </ul>
+            <p class="why"><b>Why it matters.</b> These details are worth a lot to a scammer and nothing to a recruiter.</p>
+          </div>
+        </details>
+      </fieldset>
+      <fieldset class="check" id="c20" data-n="20" data-risk="share" data-rating="high" data-short="Swap confidential details for safe wording.">
+        <legend><span class="num">20</span><span class="q">Have you kept work secrets out: confidential figures, client names, internal projects?</span></legend>
+        <p class="risk-line">A "no" means <b>oversharing</b> &middot; high priority</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="c20" value="yes"><span>Yes</span></label>
+          <label class="choice"><input type="radio" name="c20" value="no"><span>No</span></label>
+          <label class="choice"><input type="radio" name="c20" value="na"><span>Not for me</span></label>
+        </div>
+        <details>
+          <summary>How to check, and how to fix it</summary>
+          <div class="det">
+            <p><b>How to check.</b> Read your profile and CV as your employer's legal team would. Look for exact figures, client or supplier names, and projects that haven't been announced. Then check your employer's rules on what staff can share publicly.</p>
+            <p><b>Fix.</b> Swap anything confidential for percentages, ranges or outcomes, e.g. "cut costs by a third". <a href="toolkit.html#say-it-louder">Say it louder</a> has more safe swaps.</p>
+            <p class="why"><b>Why it matters.</b> A breach can cost you your job, and it tells a future employer you'd do the same to them.</p>
+          </div>
+        </details>
+      </fieldset>
+      </div>
+
+      <div class="progress-bar no-print" id="progress">
+        <span id="progress-count">0 of 20 answered</span>
+        <a href="#opinion">See my opinion</a>
+      </div>
+    </div>
+  </section>
+
+  </form>
+
+  <section id="opinion">
+    <div class="wrap">
+      <h2>3. Your opinion</h2>
+
+      <div id="opinion-box" class="result is-empty" aria-live="polite">
+        <p>Answer all 20 checks to get your opinion.</p>
+      </div>
+
+      <div id="opinion-after" hidden>
+        <div id="findings"></div>
+
+        <details class="answers">
+          <summary>See all 20 answers</summary>
+          <table class="sheet answers-table">
+            <caption class="visually-hidden">Your answer to each check</caption>
+            <thead><tr><th scope="col">#</th><th scope="col">Check</th><th scope="col">Answer</th></tr></thead>
+            <tbody id="answers-body"></tbody>
+          </table>
+        </details>
+
+        <div class="tool-actions no-print">
+          <button type="button" class="btn btn-primary" id="audit-print">Print your audit</button>
+          <button type="button" class="btn" id="audit-copy">Copy your result</button>
+          <button type="button" class="btn" id="audit-remind">Add a reminder to my calendar</button>
+          <button type="button" class="btn" id="audit-clear">Clear my answers</button>
+          <span class="status-msg" id="audit-status" role="status"></span>
+        </div>
+        <p class="fine no-print">The reminder is a calendar file dated 12 months from today, made on this page. Nothing about you is sent anywhere.</p>
+      </div>
+
+      <div class="note privacy">
+        <p>Your answers are kept in this browser, on this device, so you can come back and finish. Nothing is sent to me or anyone else. Clear them any time with the button above.</p>
+        <p>The audit is self-serve: I don't review individual profiles, so everything you need is on this page.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <p class="kicker"><svg class="mark" viewBox="0 0 52 52" aria-hidden="true"><rect x="3" y="3" width="46" height="46" rx="3"/><path d="M14 27 C18 30 21 34 23 38 C28 28 33 20 39 14"/></svg><span class="kicker-name">The toolkit</span><span>How it works</span></p>
+      <h2>How the audit works</h2>
+      <div class="prose">
+        <p>The audit borrows one idea from accounting and applies it to people. In accounting, information is material if leaving it out, getting it wrong or burying it could change the decisions of the people relying on it. That is close to the <a href="https://www.ifrs.org/news-and-events/news/2018/10/iasb-clarifies-its-definition-of-material/">official definition</a>, and it describes a presence just as well: something about you is material if leaving it out, getting it wrong or burying it could change your reader's decision about you.</p>
+        <p>Those three failures became three of the five groups of checks: <b>Complete</b> (left out), <b>Accurate</b> (wrong) and <b>Clear</b> (buried). Two more complete the set: <b>Exists</b> (can you be found at all?) and <b>Valued</b> (do you say what your work was worth?).</p>
+        <p>Auditors also test in both directions, looking for what's understated as well as what's overstated. So does this audit, which is why it can tell you that you're claiming too much, or showing something that should be private, as well as that you're underselling yourself.</p>
+      </div>
+
+      <h3 class="sub">What the opinions mean</h3>
+      <table class="sheet">
+        <caption class="visually-hidden">The four opinions, in an audit and in this audit</caption>
+        <thead><tr><th scope="col">Opinion</th><th scope="col">In an audit</th><th scope="col">Here</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Clean</th><td data-label="In an audit">The accounts give a true and fair view</td><td data-label="Here">Yes to 90% or more of the checks that apply to you</td></tr>
+          <tr><th scope="row">Qualified</th><td data-label="In an audit">Fair, except for specific, named problems</td><td data-label="Here">Yes to 60% to 89%, or a Clean score with a no on check 11, 19 or 20</td></tr>
+          <tr><th scope="row">Adverse</th><td data-label="In an audit">Materially misstated</td><td data-label="Here">Yes to under 60%</td></tr>
+          <tr><th scope="row">Disclaimer</th><td data-label="In an audit">Not enough evidence to form a view</td><td data-label="Here">No to both check 1 (can people find you?) and check 8 (proof they can open)</td></tr>
+        </tbody>
+      </table>
+      <div class="prose">
+        <p>Checks 11 (claims you can back up), 19 (private details) and 20 (work secrets) count for more than the rest. Claiming too much or exposing too much can cost you more than any amount of polish gains, so a no on any of them rules out a Clean opinion and goes to the top of your list.</p>
+      </div>
+
+      <h3 class="sub">What it isn't</h3>
+      <div class="prose">
+        <p>It isn't career advice, and it can't promise results. It's a structured way to look at your own presence as a careful stranger would.</p>
+        <p>Spot a check that's wrong or out of date? <a href="mailto:contact@liznambuya.com?subject=Presence%20audit">Email me</a> and I'll fix it.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>The presence audit is part of the <a href="toolkit.html">Platform Presence toolkit</a>. &copy; 2026 Liz Nambuya.</p>
+    <p>Nothing on this site is financial, tax or career advice.</p>
+  </div>
+</footer>
+
+<script>
+// The presence audit. Everything runs in this page. Answers are kept in this browser
+// (localStorage) so people can finish later; nothing is sent anywhere.
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var KEY = "pp-presence-audit-v1";
+  var MATERIAL = [11, 19, 20];
+  var RANK = { high: 0, medium: 1, low: 2 };
+  var RISK = { under: "underselling", over: "overclaiming", share: "oversharing" };
+  var ANSWER = { yes: "Yes", no: "No", na: "Not for me" };
+  var PAGE_URL = "https://platformpresence.com/presence-audit.html";
+
+  var form = $("audit-form");
+  if (!form) return;
+
+  var checks = Array.prototype.map.call(document.querySelectorAll("fieldset.check"), function (el) {
+    return {
+      n: +el.getAttribute("data-n"),
+      el: el,
+      q: el.querySelector(".q").textContent,
+      risks: el.getAttribute("data-risk").split(" "),
+      rating: el.getAttribute("data-rating"),
+      short: el.getAttribute("data-short")
+    };
+  });
+  var TOTAL = checks.length;
+  var byN = {};
+  checks.forEach(function (c) { byN[c.n] = c; });
+
+  /* ---------- small helpers ---------- */
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function listWords(items) {
+    if (items.length <= 1) return items.join("");
+    return items.slice(0, -1).join(", ") + " and " + items[items.length - 1];
+  }
+  function flash(statusEl, msg) {
+    statusEl.textContent = msg;
+    clearTimeout(statusEl._t);
+    statusEl._t = setTimeout(function () { statusEl.textContent = ""; }, 4000);
+  }
+  function copyText(text, statusEl) {
+    function fallback() {
+      var ta = document.createElement("textarea");
+      ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      return ok;
+    }
+    function done(ok) { flash(statusEl, ok ? "Copied." : "Couldn't copy automatically. Select the text and copy it by hand."); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(fallback()); });
+    } else { done(fallback()); }
+  }
+  function today() {
+    try { return new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }); }
+    catch (e) { return new Date().toDateString(); }
+  }
+
+  /* ---------- reading the form ---------- */
+  function readState() {
+    var answers = {};
+    checks.forEach(function (c) {
+      var picked = form.querySelector('input[name="c' + c.n + '"]:checked');
+      if (picked) answers[c.n] = picked.value;
+    });
+    var places = Array.prototype.map.call(form.querySelectorAll('input[name="place"]:checked'), function (i) { return i.value; });
+    return {
+      reader: form.elements.reader.value.trim(),
+      places: places,
+      main: form.elements.main.value,
+      answers: answers
+    };
+  }
+
+  function writeState(s) {
+    form.elements.reader.value = s.reader || "";
+    Array.prototype.forEach.call(form.querySelectorAll('input[name="place"]'), function (i) {
+      i.checked = (s.places || []).indexOf(i.value) !== -1;
+    });
+    syncMainOptions();
+    if (s.main) form.elements.main.value = s.main;
+    checks.forEach(function (c) {
+      var v = s.answers && s.answers[c.n];
+      Array.prototype.forEach.call(form.querySelectorAll('input[name="c' + c.n + '"]'), function (i) { i.checked = i.value === v; });
+    });
+  }
+
+  /* ---------- the main-profile drop-down follows the ticked places ---------- */
+  function syncMainOptions() {
+    var sel = form.elements.main, keep = sel.value;
+    var places = Array.prototype.map.call(form.querySelectorAll('input[name="place"]:checked'), function (i) { return i.value; });
+    while (sel.options.length > 1) sel.remove(1);
+    sel.options[0].textContent = places.length ? "Choose one" : "Tick the places above first";
+    places.forEach(function (p) { sel.add(new Option(p, p)); });
+    sel.value = places.indexOf(keep) !== -1 ? keep : "";
+  }
+
+  /* ---------- saving on this device ---------- */
+  function save(s) {
+    try { s.savedAt = Date.now(); localStorage.setItem(KEY, JSON.stringify(s)); } catch (e) { /* storage unavailable: carry on */ }
+  }
+  function load() {
+    try { var raw = localStorage.getItem(KEY); return raw ? JSON.parse(raw) : null; } catch (e) { return null; }
+  }
+  function forget() {
+    try { localStorage.removeItem(KEY); } catch (e) { /* nothing to do */ }
+  }
+
+  /* ---------- the opinion ---------- */
+  var OPINIONS = {
+    clean: {
+      name: "Clean",
+      line: "Your presence fairly shows your value to your reader. Audit again in 12 months, or after your next change of role.",
+      audit: "In an audit, a clean opinion means the accounts give a true and fair view."
+    },
+    qualified: {
+      name: "Qualified",
+      line: "Your presence is fair, except for the checks you answered no. Start with the list below.",
+      audit: "In an audit, a qualified opinion means the accounts are fair except for specific, named problems."
+    },
+    adverse: {
+      name: "Adverse",
+      line: "As it stands, your presence doesn't show your value. Start with the list below; most fixes take minutes.",
+      audit: "In an audit, an adverse opinion means the accounts are materially misstated."
+    },
+    disclaimer: {
+      name: "Disclaimer",
+      line: "A reader can't find you or check anything you claim, so no opinion is possible yet. Start with checks 1 and 8.",
+      audit: "In an audit, a disclaimer means the auditor couldn't get enough evidence to form a view."
+    }
+  };
+
+  function assess(s) {
+    var a = s.answers, answered = Object.keys(a).length;
+    var out = { answered: answered, complete: answered === TOTAL };
+    if (!out.complete) {
+      out.missing = checks.filter(function (c) { return !a[c.n]; }).map(function (c) { return c.n; });
+      return out;
+    }
+    var nos = checks.filter(function (c) { return a[c.n] === "no"; });
+    var na = checks.filter(function (c) { return a[c.n] === "na"; }).length;
+    var applicable = TOTAL - na;
+    var yes = applicable - nos.length;
+    out.yes = yes; out.applicable = applicable; out.na = na; out.nos = nos;
+    if (applicable === 0) { out.opinion = null; return out; }
+
+    var opinion;
+    if (a[1] === "no" && a[8] === "no") opinion = "disclaimer";
+    else if (yes * 10 >= applicable * 9) opinion = "clean";
+    else if (yes * 10 >= applicable * 6) opinion = "qualified";
+    else opinion = "adverse";
+
+    var materialNos = MATERIAL.filter(function (n) { return a[n] === "no"; });
+    out.capped = false;
+    if (opinion === "clean" && materialNos.length) { opinion = "qualified"; out.capped = true; }
+    out.opinion = opinion;
+    out.materialNos = materialNos;
+
+    // which way the presence leans
+    var count = { under: 0, over: 0, share: 0 };
+    nos.forEach(function (c) { c.risks.forEach(function (r) { count[r]++; }); });
+    out.count = count;
+
+    // findings, most serious first: (disclaimer: checks 1 and 8), material checks, then by rating, then number
+    var forced = opinion === "disclaimer" ? [1, 8] : [];
+    out.findings = nos.slice().sort(function (x, y) {
+      var fx = forced.indexOf(x.n), fy = forced.indexOf(y.n);
+      if ((fx !== -1) !== (fy !== -1)) return fx !== -1 ? -1 : 1;
+      if (fx !== -1 && fy !== -1) return fx - fy;
+      var mx = MATERIAL.indexOf(x.n) !== -1, my = MATERIAL.indexOf(y.n) !== -1;
+      if (mx !== my) return mx ? -1 : 1;
+      if (RANK[x.rating] !== RANK[y.rating]) return RANK[x.rating] - RANK[y.rating];
+      return x.n - y.n;
+    });
+    return out;
+  }
+
+  function leanParts(r, person) {
+    // person: "you" for the page, "me" for the copied result
+    var c = r.count, parts = [];
+    if (c.under || c.over) {
+      if (c.under > c.over) parts.push("undersells " + person);
+      else if (c.over > c.under) parts.push("oversells " + person);
+      else parts.push("undersells " + person + " in places and oversells " + person + " in others");
+    }
+    if (c.share) parts.push(c.share === 1 ? "shows one thing it shouldn't" : "shows things it shouldn't");
+    return parts;
+  }
+
+  /* ---------- drawing the result ---------- */
+  var box = $("opinion-box"), after = $("opinion-after"), progress = $("progress-count");
+
+  function render(s) {
+    var r = assess(s);
+    progress.textContent = r.answered + " of " + TOTAL + " answered";
+    $("progress").classList.toggle("is-done", r.complete);
+
+    // mark each check with its answer, for the eye and for print
+    checks.forEach(function (c) {
+      var v = s.answers[c.n];
+      c.el.classList.toggle("is-yes", v === "yes");
+      c.el.classList.toggle("is-no", v === "no");
+      c.el.classList.toggle("is-na", v === "na");
+    });
+
+    box.textContent = "";
+    if (!r.complete) {
+      box.className = "result is-empty";
+      box.appendChild(el("p", null, r.answered ? "Answer all " + TOTAL + " checks to get your opinion. " + r.answered + " answered so far." : "Answer all " + TOTAL + " checks to get your opinion."));
+      if (r.answered) {
+        var p = el("p", "missing", "Still to answer: ");
+        r.missing.forEach(function (n, i) {
+          var link = el("a", null, String(n)); link.href = "#c" + n;
+          p.appendChild(link);
+          if (i < r.missing.length - 1) p.appendChild(document.createTextNode(", "));
+        });
+        box.appendChild(p);
+      }
+      after.hidden = true;
+      return r;
+    }
+
+    box.className = "result opinion";
+    // header
+    var meta = el("div", "opinion-meta");
+    meta.appendChild(el("p", null, "Audited " + today()));
+    if (s.reader) meta.appendChild(el("p", null, "Reader: " + s.reader));
+    if (s.places.length) meta.appendChild(el("p", null, "Places checked: " + s.places.join(", ") + (s.main ? " (main profile: " + s.main + ")" : "")));
+    box.appendChild(meta);
+
+    if (!r.opinion) {
+      box.appendChild(el("p", "score", "No opinion."));
+      box.appendChild(el("p", null, "You've marked every check Not for me, so there's nothing to give an opinion on."));
+      after.hidden = true;
+      return r;
+    }
+
+    var op = OPINIONS[r.opinion];
+    box.appendChild(el("p", "opinion-word is-" + r.opinion, op.name + "."));
+    box.appendChild(el("p", "opinion-line", op.line));
+    box.appendChild(el("p", "opinion-audit", op.audit));
+    box.appendChild(el("p", "opinion-score", "You answered yes to " + r.yes + " of " + r.applicable + (r.na ? " (" + r.na + " marked Not for me)." : ".")));
+
+    if (r.capped) {
+      box.appendChild(el("p", "opinion-note",
+        "Because check" + (r.materialNos.length > 1 ? "s " : " ") + listWords(r.materialNos.map(String)) + (r.materialNos.length > 1 ? " are" : " is") +
+        " a no, the best opinion available is Qualified. " + (r.materialNos.length > 1 ? "They're" : "It's") + " at the top of your list."));
+    }
+
+    var parts = leanParts(r, "you");
+    if (parts.length) {
+      var lead = r.opinion === "clean" ? "Where it falls short, your presence " : "Your presence ";
+      box.appendChild(el("p", "opinion-lean", lead + parts.join(", and ") + "."));
+      var why = el("ul", "lean-list"), one = r.nos.length === 1;
+      if (r.count.under > r.count.over) why.appendChild(el("li", null, (one ? "Your one no is" : "Most of your no's are") + " underselling: you're hiding how good you are."));
+      if (r.count.over > r.count.under) why.appendChild(el("li", null, (one ? "Your one no is" : "Most of your no's are") + " overclaiming: you're saying more than you could prove."));
+      if (r.count.share) why.appendChild(el("li", null, (r.count.share === 1 ? "One is" : "Some are") + " oversharing: something's public that should be private. Fix that first."));
+      if (why.children.length) box.appendChild(why);
+    }
+    if (r.na >= 5) {
+      box.appendChild(el("p", "opinion-note", "With " + r.na + " checks marked Not for me, this opinion rests on fewer checks than usual."));
+    }
+
+    // findings
+    var f = $("findings");
+    f.textContent = "";
+    if (!r.findings.length) {
+      f.appendChild(el("p", null, "Nothing to fix. Audit again in 12 months, or after your next change of role."));
+    } else {
+      var top = r.findings.slice(0, 3), rest = r.findings.slice(3);
+      f.appendChild(el("h3", "sub", r.findings.length <= 3 ? "What to fix" : "Start with these three"));
+      f.appendChild(findingList(top, true));
+      if (rest.length) {
+        f.appendChild(el("h3", "sub small", "When you have time"));
+        f.appendChild(findingList(rest, false));
+      }
+      var louder = r.findings.filter(function (c) { return [5, 13, 14, 16, 20].indexOf(c.n) !== -1; }).map(function (c) { return c.n; }).sort(function (x, y) { return x - y; });
+      if (louder.length) {
+        var tip = el("p", "next-tip");
+        tip.appendChild(document.createTextNode("Next: "));
+        var a2 = el("a", null, "Say it louder"); a2.href = "toolkit.html#say-it-louder";
+        tip.appendChild(a2);
+        tip.appendChild(document.createTextNode(" helps with check" + (louder.length > 1 ? "s " : " ") + listWords(louder.map(String)) + "."));
+        f.appendChild(tip);
+      }
+    }
+
+    // every answer, for the record (open in print)
+    var tbody = $("answers-body");
+    tbody.textContent = "";
+    checks.forEach(function (c) {
+      var tr = document.createElement("tr");
+      var v = s.answers[c.n];
+      tr.className = "is-" + v;
+      tr.appendChild(el("td", "num", String(c.n)));
+      tr.appendChild(el("td", null, c.q));
+      tr.appendChild(el("td", "ans", ANSWER[v]));
+      tbody.appendChild(tr);
+    });
+
+    after.hidden = false;
+    return r;
+  }
+
+  function findingList(items, withAction) {
+    var ol = el("ol", "findings-list");
+    items.forEach(function (c) {
+      var li = el("li");
+      var head = el("p", "f-head");
+      var link = el("a", null, "Check " + c.n); link.href = "#c" + c.n;
+      link.addEventListener("click", function () { var d = c.el.querySelector("details"); if (d) d.open = true; });
+      head.appendChild(link);
+      head.appendChild(el("span", "rating is-" + c.rating, c.rating.charAt(0).toUpperCase() + c.rating.slice(1)));
+      head.appendChild(el("span", "f-risk", c.risks.map(function (x) { return RISK[x]; }).join(" or ")));
+      li.appendChild(head);
+      if (withAction) li.appendChild(el("p", "f-action", c.short));
+      li.appendChild(el("p", "f-q", c.q));
+      ol.appendChild(li);
+    });
+    return ol;
+  }
+
+  function resultText() {
+    var s = readState(), r = assess(s);
+    if (!r.complete || !r.opinion) return "";
+    var line = "My presence audit: " + OPINIONS[r.opinion].name + ", " + r.yes + " of " + r.applicable + ".";
+    var parts = leanParts(r, "me");
+    if (parts.length) line += " It says my presence " + parts.join(", and ") + ".";
+    return line + " Try it free: " + PAGE_URL;
+  }
+
+  /* ---------- calendar reminder: an .ics file made in the browser ---------- */
+  function icsDate(d) {
+    var p = function (x) { return (x < 10 ? "0" : "") + x; };
+    return d.getFullYear() + p(d.getMonth() + 1) + p(d.getDate());
+  }
+  function makeReminder() {
+    var s = readState(), r = assess(s);
+    var now = new Date(), due = new Date(now.getTime());
+    due.setFullYear(due.getFullYear() + 1);
+    var end = new Date(due.getTime()); end.setDate(end.getDate() + 1);
+    var stamp = now.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+    var last = r.complete && r.opinion ? "Last time: " + OPINIONS[r.opinion].name + "\\, " + r.yes + " of " + r.applicable + ". " : "";
+    var lines = [
+      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Platform Presence//Presence audit//EN", "CALSCALE:GREGORIAN",
+      "BEGIN:VEVENT",
+      "UID:presence-audit-" + now.getTime() + "@platformpresence.com",
+      "DTSTAMP:" + stamp,
+      "DTSTART;VALUE=DATE:" + icsDate(due),
+      "DTEND;VALUE=DATE:" + icsDate(end),
+      "SUMMARY:Re-run my presence audit",
+      "DESCRIPTION:" + last + "Twenty checks\\, about twenty minutes: " + PAGE_URL,
+      "URL:" + PAGE_URL,
+      "END:VEVENT", "END:VCALENDAR"
+    ];
+    var blob = new Blob([lines.join("\r\n") + "\r\n"], { type: "text/calendar;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = window.URL.createObjectURL(blob);
+    a.download = "presence-audit-reminder.ics";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { window.URL.revokeObjectURL(a.href); }, 1000);
+    flash($("audit-status"), "Reminder downloaded. Open the file to add it to your calendar.");
+  }
+
+  /* ---------- wiring ---------- */
+  function onChange(e) {
+    var t = e && e.target;
+    if (t && t.name === "place") syncMainOptions();
+    if (t && /^c\d+$/.test(t.name) && t.value === "no") {
+      var d = t.closest("fieldset.check").querySelector("details");
+      if (d) d.open = true;
+    }
+    var s = readState();
+    save(s);
+    render(s);
+  }
+  form.addEventListener("change", onChange);
+  form.addEventListener("input", function (e) { if (e.target.name === "reader") onChange(e); });
+  form.addEventListener("submit", function (e) { e.preventDefault(); });
+
+  $("audit-copy").addEventListener("click", function () { copyText(resultText(), $("audit-status")); });
+  $("audit-print").addEventListener("click", function () {
+    var ans = document.querySelector("details.answers"), wasOpen = ans ? ans.open : false;
+    if (ans) ans.open = true;
+    document.body.classList.add("print-audit");
+    window.print();
+    setTimeout(function () { document.body.classList.remove("print-audit"); if (ans) ans.open = wasOpen; }, 500);
+  });
+  $("audit-remind").addEventListener("click", makeReminder);
+
+  var clearBtn = $("audit-clear"), clearArmed = false, clearTimer;
+  clearBtn.addEventListener("click", function () {
+    if (!clearArmed) {
+      clearArmed = true;
+      clearBtn.textContent = "Click again to clear everything";
+      clearTimer = setTimeout(function () { clearArmed = false; clearBtn.textContent = "Clear my answers"; }, 4000);
+      return;
+    }
+    clearTimeout(clearTimer); clearArmed = false; clearBtn.textContent = "Clear my answers";
+    forget();
+    form.reset();
+    syncMainOptions();
+    checks.forEach(function (c) { var d = c.el.querySelector("details"); if (d) d.open = false; });
+    $("restored").hidden = true;
+    render(readState());
+    location.hash = "#reader";
+    flash($("audit-status"), "Cleared.");
+  });
+
+  /* ---------- start ---------- */
+  syncMainOptions();
+  var saved = load();
+  if (saved && saved.answers) {
+    writeState(saved);
+    if (Object.keys(saved.answers).length || saved.reader) {
+      var note = $("restored");
+      var when = saved.savedAt ? new Date(saved.savedAt).toLocaleDateString("en-GB", { day: "numeric", month: "long" }) : "earlier";
+      note.querySelector(".when").textContent = when;
+      note.hidden = false;
+    }
+  }
+  render(readState());
+})();
+</script>
+
+</body>
+</html>
