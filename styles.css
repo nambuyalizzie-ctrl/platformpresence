@@ -218,6 +218,75 @@ button.btn { cursor: pointer; }
 .sheet .struck { color: var(--ink-soft); text-decoration: line-through; text-decoration-color: var(--pencil); text-decoration-thickness: 1.5px; }
 [hidden] { display: none !important; }
 
+/* The presence audit */
+.places { border: 0; padding: 0; min-width: 0; }
+legend.label { display: block; font-weight: 700; padding: 0; }
+.places-grid { margin-top: 10px; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 2px 20px; }
+.field .places-grid label { display: grid; grid-template-columns: 1.6rem 1fr; align-items: start; padding: 6px 0; font-weight: 400; cursor: pointer; }
+.places-grid input { width: 1.05rem; height: 1.05rem; margin-top: 0.35em; accent-color: var(--pencil); }
+.field select { display: block; width: 100%; max-width: 32ch; margin-top: 8px; padding: 10px 12px; font: inherit; color: var(--ink); background: var(--paper-light); border: 1px solid var(--ink-soft); border-radius: 3px; }
+.check-group { margin-top: 56px; max-width: 760px; }
+.check-group > .kicker { margin-bottom: 6px; }
+.check-group > h3.sub { margin-top: 0; margin-bottom: 10px; }
+.check { border: 0; border-top: 1px solid var(--rule); border-left: 3px solid transparent; margin: 0; padding: 22px 0 22px 16px; min-width: 0; }
+.check legend { float: left; width: 100%; padding: 0; display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: 0 10px; }
+.check .num { font-family: var(--display); font-size: 1.5rem; line-height: 1.15; color: var(--pencil); }
+.check .q { font-weight: 700; font-size: 1.06rem; line-height: 1.45; }
+.check .risk-line, .check .choices, .check details { margin-left: calc(2.2rem + 10px); }
+.risk-line { clear: both; padding-top: 6px; color: var(--ink-soft); font-style: italic; font-size: 0.92rem; }
+.risk-line b { font-style: normal; color: var(--ink); }
+.check details { margin-top: 14px; }
+.check summary, .answers summary { cursor: pointer; width: fit-content; color: var(--ink-soft); font-size: 0.95rem; text-decoration: underline; text-decoration-color: var(--pencil); text-underline-offset: 3px; }
+.check summary:hover, .answers summary:hover { color: var(--pencil); }
+.det { margin-top: 10px; max-width: 62ch; padding: 14px 18px; background: var(--paper-light); border-left: 3px solid var(--rule); }
+.det > * + * { margin-top: 10px; }
+.det-list { margin-left: 1.2rem; }
+.det-list li + li { margin-top: 6px; }
+.det .why { color: var(--ink-soft); }
+.check.is-yes { border-left-color: var(--ink); }
+.check.is-no { border-left-color: var(--pencil); }
+.check.is-na { border-left-color: var(--rule); }
+.check.is-na .q { color: var(--ink-soft); }
+.panel { margin-top: 30px; max-width: 760px; padding: 20px 22px; background: var(--paper-light); border: 1px solid var(--ink); }
+.panel > * + * { margin-top: 12px; }
+.panel .pattern { margin-top: 12px; }
+.panel-title { font-weight: 700; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.progress-bar { position: sticky; bottom: 0; z-index: 5; margin-top: 40px; max-width: 760px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 16px; padding: 12px 18px; background: var(--ink); color: var(--paper); font-size: 0.95rem; }
+.progress-bar a { color: var(--paper); text-decoration-color: var(--paper); }
+.progress-bar.is-done { background: var(--pencil); }
+.result.opinion { padding: 26px 28px; }
+.result .missing a { color: inherit; }
+.opinion-meta { color: var(--ink-soft); font-style: italic; font-size: 0.9rem; }
+.result .opinion-meta p + p { margin-top: 2px; }
+.opinion-word { margin-top: 14px; font-family: var(--display); font-size: clamp(2.4rem, 6vw, 3.4rem); line-height: 1; color: var(--pencil); }
+.opinion-word.is-clean { color: var(--ink); }
+.result .opinion-line { margin-top: 14px; font-size: 1.1rem; }
+.opinion-audit { color: var(--ink-soft); font-style: italic; font-size: 0.88rem; }
+.result .opinion-score { margin-top: 14px; font-weight: 700; }
+.result .opinion-note { margin-top: 12px; padding-left: 12px; border-left: 2px solid var(--pencil); }
+.result .opinion-lean { margin-top: 18px; font-family: var(--display); font-size: 1.35rem; line-height: 1.25; }
+.lean-list { margin: 8px 0 0 1.2rem; color: var(--ink-soft); }
+#findings { max-width: 760px; }
+#findings h3.sub.small { margin-top: 36px; font-size: 1.25rem; }
+.findings-list { list-style: none; margin-top: 14px; }
+.findings-list li { padding: 14px 0; border-top: 1px solid var(--rule); }
+.f-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.f-head a { font-weight: 700; }
+.rating { padding: 1px 8px; border: 1px solid currentColor; border-radius: 2px; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.rating.is-high { color: var(--pencil); }
+.rating.is-medium { color: var(--ink); }
+.rating.is-low { color: var(--ink-soft); }
+.f-risk { color: var(--ink-soft); font-style: italic; font-size: 0.92rem; }
+.f-action { margin-top: 6px; font-size: 1.05rem; }
+.f-q { margin-top: 4px; color: var(--ink-soft); font-size: 0.93rem; }
+.next-tip { margin-top: 22px; }
+.answers { margin-top: 30px; max-width: 920px; }
+.answers-table td.num { color: var(--ink-soft); width: 2.5rem; }
+.answers-table td.ans { white-space: nowrap; }
+.answers-table tr.is-no td.ans { color: var(--pencil); font-weight: 700; }
+.answers-table tr.is-na td { color: var(--ink-soft); }
+.privacy { margin-top: 44px; }
+
 /* Contact and footer */
 .contact-links { margin-top: 28px; display: flex; gap: 26px; flex-wrap: wrap; }
 .site-foot { padding: 28px 0 40px; color: var(--ink-soft); font-size: 0.9rem; }
@@ -260,4 +329,24 @@ button.btn { cursor: pointer; }
   body.print-value-audit section { border: 0; padding: 0; }
   body.print-value-audit .choice span { border-color: #999; color: #999; }
   body.print-value-audit .choice input:checked + span { background: #fff; color: #000; border: 2px solid #000; font-weight: 700; }
+}
+
+/* The presence audit on small screens */
+@media (max-width: 760px) {
+  .check { padding-left: 12px; }
+  .check legend { grid-template-columns: 1.8rem minmax(0, 1fr); gap: 0 8px; }
+  .check .risk-line, .check .choices, .check details { margin-left: 0; }
+  .result.opinion { padding: 22px 18px; }
+  .answers-table td.num { width: auto; }
+}
+
+/* Printing the presence audit: the opinion, findings and every answer, on white */
+@media print {
+  body.print-audit { background: #fff; }
+  body.print-audit .site-head, body.print-audit .site-foot, body.print-audit .hero, body.print-audit #audit-form,
+  body.print-audit #how, body.print-audit .no-print, body.print-audit .privacy, body.print-audit details.answers > summary { display: none !important; }
+  body.print-audit section { border: 0; padding: 0; }
+  body.print-audit .result { background: #fff; }
+  body.print-audit .findings-list li, body.print-audit .answers-table tr { break-inside: avoid; }
+  body.print-audit #findings a, body.print-audit .result a { color: #000; text-decoration: none; }
 }
